@@ -1,30 +1,27 @@
-let vitorias = 211
-let derrotas = 43
-let resultado = subtracao(vitorias, derrotas)
+let v = 156
+let d = 43
 
-console.log("O jogador venceu um total de  " + resultado + " partidas rankeadas!")
-
-function subtracao(vitorias, derrotas){
-    let resultadoFinal = vitorias - derrotas
+function calculadoraDeVitorias(x, y) {
+    let resultadoFinal = x - y
     return resultadoFinal
 }
 
+let vitorias = calculadoraDeVitorias(v, d)
+
 if(vitorias < 10){
-    console.log("Ele esta na clase Bronze!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Bronze!");
 }else if(vitorias > 10 && vitorias < 21){
-    console.log("Ele esta na classe Ferro!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Ferro!");
 }else if(vitorias > 20 && vitorias < 51){
-    console.log("Ele esta na clase Prata!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Prata!");
 }else if(vitorias > 50 && vitorias < 81){
-    console.log("Ele esta na clase Ouro!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Ouro!");
 }else if(vitorias > 80 && vitorias < 91){
-    console.log("Ele esta na clase Diamante!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Diamante!");
 }else if(vitorias > 90 && vitorias < 101){
-    console.log("Ele esta na clase Lendário!");
+    console.log("O Herói tem o saldo de " + vitorias + " está no nível de Lendário!");
 }else if(vitorias >= 101){
-        console.log("Ele esta na clase Imortal!");
-}else{
-    console.log("Não foi possível identificar a classe do jogador!")
+        console.log("O Herói tem o saldo de " + vitorias + " está no nível de Imortal!");
 }
 
     
